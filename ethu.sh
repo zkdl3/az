@@ -9,7 +9,7 @@ POOL=us1.ethermine.org:4444
 # ethash:     ethermine
 # ethproxy:   BTC.com, Ethermine, PandaMiner, Sparkpool
 # ethstratum: Antpool.com, BTC.com, F2pool, Huobipool.com, Miningpoolhub
-SCHEME=ethstratum
+SCHEME=ethhash
 
 ./bminer -uri $SCHEME://$USERNAME@$POOL -api 127.0.0.1:1880 -max-temperature 65 -intensity 6
 
